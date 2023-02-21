@@ -60,6 +60,9 @@
                 <td class="auto-style7">
                     <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="#66FFFF" BorderStyle="Solid" CellPadding="2" CssClass="auto-style3" Font-Strikeout="False" GridLines="Vertical" RepeatColumns="2" RepeatDirection="Horizontal" Width="550px" OnItemCommand="DataList1_ItemCommand">
                         <AlternatingItemStyle BackColor="#DCDCDC" />
+                        <SeparatorTemplate>
+                            <hr />
+                        </SeparatorTemplate>
                         <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                         <HeaderStyle BackColor="#000084" Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" Font-Underline="False" ForeColor="White" />
                         <ItemStyle BackColor="#EEEEEE" ForeColor="Black" />

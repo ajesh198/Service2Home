@@ -10,6 +10,9 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <div>
+        <h2 class="text-center" style="text-decoration: underline; font-family: 'Arial Black'; font-weight: 200; font-style: normal; color: #0000FF">Completed Requests.</h2>
+    </div>
     <div>
 
         <table class="w-100">
