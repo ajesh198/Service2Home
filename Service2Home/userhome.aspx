@@ -96,7 +96,7 @@
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
                             <br />
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
-                            <asp:Button ID="Button1" runat="server" BackColor="Orange" Font-Bold="True" Font-Size="Large" ForeColor="White" Text="Book Service" CommandName="bookservice" />
+                            <asp:Button ID="Button1" runat="server" BackColor="Orange" Font-Bold="True" Font-Size="Large" ForeColor="White" Text="Book Service" CommandName="bookservice" OnClientClick="Confirm();" />
                             <br />
                         </ItemTemplate>
                         <SelectedItemStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />

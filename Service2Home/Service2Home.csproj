@@ -99,6 +99,7 @@
     <Content Include="assets\img\trucking-service.jpg" />
     <Content Include="assets\img\warehousing-service.jpg" />
     <Content Include="assets\js\main.js" />
+    <Content Include="assets\js\s2h.js" />
     <Content Include="assets\scss\Readme.txt" />
     <Content Include="assets\vendor\aos\aos.css" />
     <Content Include="assets\vendor\aos\aos.js" />
