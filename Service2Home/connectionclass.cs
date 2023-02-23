@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
+using System.Configuration;
 
 
 namespace Service2Home
@@ -14,7 +15,10 @@ namespace Service2Home
         SqlCommand cmd;
         public connectionclass()
         {
-            con = new SqlConnection(@"server=DESKTOP-EA0OJCK\SQLEXPRESS;database=S2H;Integrated security=true");
+            string strcon = ConfigurationManager.ConnectionStrings["dbconnection"].ConnectionString;
+            //create new sqlconnection and connection to database by using connection string from web.config file  
+            con = new SqlConnection(strcon);
+            //con = new SqlConnection(@"server=DESKTOP-EA0OJCK\SQLEXPRESS;database=S2H;Integrated security=true");
         }
         public int Fun_nonquery(String sqlquery)
         {
