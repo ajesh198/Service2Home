@@ -173,8 +173,7 @@
                     <tr>
                         <td class="auto-style4">&nbsp;</td>
                         <td class="auto-style10">
-                                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="nametxt" EnableTheming="True" ErrorMessage="OTP is required" Font-Bold="True" Font-Size="Smaller" ForeColor="Red"></asp:RequiredFieldValidator>
-                                        </td>
+                                            &nbsp;</td>
                         <td class="auto-style5">&nbsp;</td>
                     </tr>
                                     <tr>

@@ -13,7 +13,7 @@ namespace Service2Home
         connectionclass connection = new connectionclass();
         protected void Page_Load(object sender, EventArgs e)
         {
-            String pend = "select * from service_request where serviceid=" + Session["uid"] + " and status='completed'";
+            String pend = "select * from service_request where serviceid=" + Session["uid"] + " and status='completed' or status='cancelled' ";
             DataSet dr = connection.Fun_dataadapter(pend);
             DataList1.DataSource = dr;
             DataList1.DataBind();

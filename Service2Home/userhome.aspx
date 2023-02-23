@@ -58,14 +58,13 @@
             <tr>
                 <td class="auto-style4">&nbsp;</td>
                 <td class="auto-style7">
-                    <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="#66FFFF" BorderStyle="Solid" CellPadding="2" CssClass="auto-style3" Font-Strikeout="False" GridLines="Vertical" RepeatColumns="2" RepeatDirection="Horizontal" Width="550px" OnItemCommand="DataList1_ItemCommand">
-                        <AlternatingItemStyle BackColor="#DCDCDC" />
+                    <asp:DataList ID="DataList1" runat="server" BackColor="White" BorderColor="White" BorderStyle="Ridge" CellPadding="3" CssClass="auto-style3" Font-Strikeout="False" RepeatColumns="3" RepeatDirection="Horizontal" Width="550px" OnItemCommand="DataList1_ItemCommand" BorderWidth="2px" CellSpacing="1">
                         <SeparatorTemplate>
                             <hr />
                         </SeparatorTemplate>
-                        <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
-                        <HeaderStyle BackColor="#000084" Font-Bold="True" Font-Italic="False" Font-Overline="False" Font-Size="X-Large" Font-Strikeout="False" Font-Underline="False" ForeColor="White" />
-                        <ItemStyle BackColor="#EEEEEE" ForeColor="Black" />
+                        <FooterStyle BackColor="#C6C3C6" ForeColor="Black" />
+                        <HeaderStyle BackColor="#4A3C8C" Font-Bold="True" Font-Size="X-Large" ForeColor="#E7E7FF" />
+                        <ItemStyle BackColor="#DEDFDE" ForeColor="Black" />
                         <ItemTemplate>
                             &nbsp;<asp:Label ID="lblname" runat="server" Font-Size="X-Large" ForeColor="Red" Text="Name :"></asp:Label>
                             &nbsp;
@@ -81,11 +80,10 @@
                             <asp:Label ID="Label9" runat="server" Text="Working location : "></asp:Label>
                             <asp:Label ID="Label5" runat="server" Font-Size="Medium" Text='<%# Eval("pincode") %>'></asp:Label>
                             <br />
-                            &nbsp;<br />
-                            <br />
                             <asp:Label ID="Label10" runat="server" Text="phone no : "></asp:Label>
                             <asp:Label ID="Label3" runat="server" Font-Bold="True" ForeColor="Blue" Text='<%# Eval("phoneno") %>'></asp:Label>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <br />
                             <asp:Label ID="Label11" runat="server" Text="email : "></asp:Label>
                             &nbsp;&nbsp;
                             <asp:Label ID="Label6" runat="server" Font-Bold="True" ForeColor="Blue" Text='<%# Eval("email") %>'></asp:Label>
@@ -99,7 +97,7 @@
                             <asp:Button ID="Button1" runat="server" BackColor="Orange" Font-Bold="True" Font-Size="Large" ForeColor="White" Text="Book Service" CommandName="bookservice" OnClientClick="Confirm();" />
                             <br />
                         </ItemTemplate>
-                        <SelectedItemStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+                        <SelectedItemStyle BackColor="#9471DE" Font-Bold="True" ForeColor="White" />
                     </asp:DataList>
                 </td>
             </tr>

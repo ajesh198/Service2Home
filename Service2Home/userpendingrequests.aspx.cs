@@ -16,7 +16,7 @@ namespace Service2Home
         {
             if (!IsPostBack)
             {
-                String pend = "select * from service_request where regid=" + Session["uid"] + " and not (status='cancelled' or status='completed' or status='bill payment' or status='payment pending') ";
+                String pend = "select * from service_request where regid=" + Session["uid"] + " and not (status='cancelled' or status='completed' or status='payment pending') ";
                 DataSet dr = connection.Fun_dataadapter(pend);
                 DataList1.DataSource = dr;
                 DataList1.DataBind();
@@ -55,7 +55,7 @@ namespace Service2Home
                 int r = connection.Fun_nonquery(can);
                 if (r != 0)
                 {
-                    String pend = "select * from service_request where regid=" + Session["uid"] + " and not (status='cancelled' or status='completed' or status='bill payment' or status='payment pending') ";
+                    String pend = "select * from service_request where regid=" + Session["uid"] + " and not (status='cancelled' or status='completed'  or status='payment pending') ";
                     DataSet dr = connection.Fun_dataadapter(pend);
                     DataList1.DataSource = dr;
                     DataList1.DataBind();
