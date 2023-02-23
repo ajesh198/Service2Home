@@ -67,37 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about.html" />
     <Content Include="assets\css\main.css" />
-    <Content Include="assets\img\about.jpg" />
-    <Content Include="assets\img\apple-touch-icon.png" />
-    <Content Include="assets\img\cargo-service.jpg" />
-    <Content Include="assets\img\cta-bg.jpg" />
-    <Content Include="assets\img\favicon.png" />
-    <Content Include="assets\img\features-1.jpg" />
-    <Content Include="assets\img\features-2.jpg" />
-    <Content Include="assets\img\features-3.jpg" />
-    <Content Include="assets\img\features-4.jpg" />
-    <Content Include="assets\img\hero-bg.png" />
-    <Content Include="assets\img\hero-img.svg" />
-    <Content Include="assets\img\logistics-service.jpg" />
-    <Content Include="assets\img\logo.png" />
-    <Content Include="assets\img\packaging-service.jpg" />
-    <Content Include="assets\img\page-header.jpg" />
-    <Content Include="assets\img\quote-bg.jpg" />
-    <Content Include="assets\img\service-details.jpg" />
-    <Content Include="assets\img\storage-service.jpg" />
-    <Content Include="assets\img\team\team-1.jpg" />
-    <Content Include="assets\img\team\team-2.jpg" />
-    <Content Include="assets\img\team\team-3.jpg" />
-    <Content Include="assets\img\testimonials-bg.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-1.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-2.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-3.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-4.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-5.jpg" />
-    <Content Include="assets\img\trucking-service.jpg" />
-    <Content Include="assets\img\warehousing-service.jpg" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\s2h.js" />
     <Content Include="assets\scss\Readme.txt" />
@@ -156,23 +126,14 @@
     <Content Include="assets\vendor\swiper\swiper-bundle.min.js" />
     <Content Include="categoryadd.aspx" />
     <Content Include="changelog.txt" />
-    <Content Include="contact.html" />
     <Content Include="default.aspx" />
     <Content Include="forgotpass.aspx" />
-    <Content Include="forms\contact.php" />
-    <Content Include="forms\quote.php" />
-    <Content Include="forms\Readme.txt" />
-    <Content Include="get-a-quote.html" />
     <Content Include="index.html" />
-    <Content Include="pricing.html" />
     <Content Include="Readme.txt" />
-    <Content Include="sample-inner-page.html" />
-    <Content Include="service-details.html" />
     <Content Include="servicebill.aspx" />
     <Content Include="servicecompleted.aspx" />
     <Content Include="servicepage.aspx" />
     <Content Include="serviceregister.aspx" />
-    <Content Include="services.html" />
     <Content Include="serviceworkonprogress.aspx" />
     <Content Include="Userbillpay.aspx" />
     <Content Include="usercompletedrequests.aspx" />
@@ -344,12 +305,16 @@
     <None Include="packages.config" />
     <Content Include="userpage.Master" />
     <Content Include="servicehome.Master" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\img\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
