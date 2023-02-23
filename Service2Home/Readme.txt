@@ -1,6 +1,18 @@
-Thanks for downloading this template!
+Website: http://servicetohome-001-site1.ctempurl.com/
 
-Template Name: Logis
-Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+
+create an user/service account
+
+
+
+Test Credentials
+test pincode : 686666
+
+User -
+email:ajeshdarji98@gmail,com
+password: 123
+
+
+Service agent - 
+email:ajeshdarji@gmail.com
+password: 123
