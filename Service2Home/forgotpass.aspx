@@ -1,5 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/userpage.Master" AutoEventWireup="true" CodeBehind="forgotpass.aspx.cs" Inherits="Service2Home.forgotpass" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            height: 27px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
      <section class="vh-80 bg-image"
@@ -25,8 +30,16 @@
                     <td class="auto-style1">
                         <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style1">
                         <asp:TextBox ID="nametxt" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style1"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">
+                        &nbsp;</td>
+                    <td>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="nametxt" ErrorMessage="Name is required" Font-Bold="True" Font-Size="Smaller" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -38,6 +51,17 @@
                         <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
+                </tr>
+                    <tr>
+                    <td class="auto-style2">
+                        &nbsp;</td>
+                    <td class="auto-style3">
+                        
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="emailtxt" ErrorMessage="Wrong email format" Font-Bold="True" Font-Size="Smaller" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                        
+                    </td>
+                    <td class="auto-style3">
+                        &nbsp;</td>
                 </tr>
                     <tr>
                     <td class="auto-style2">
@@ -59,6 +83,14 @@
                 </tr>
                     <tr>
                     <td class="auto-style2">
+                        &nbsp;</td>
+                    <td class="auto-style3">
+                        &nbsp;</td>
+                    <td class="auto-style3">
+                        &nbsp;</td>
+                </tr>
+                    <tr>
+                    <td class="auto-style2">
                         <asp:Label ID="Label4" runat="server" Text="OTP"></asp:Label>
                     </td>
                     <td class="auto-style3">
@@ -70,6 +102,14 @@
                  </tr>
                     <tr>
                     <td class="auto-style4">
+                        &nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="otptxt" ErrorMessage="OTP is required" Font-Bold="True" Font-Size="Smaller" ForeColor="Red"></asp:RequiredFieldValidator>
+                    </td>
+                    <td class="auto-style5">&nbsp;</td>
+                </tr>
+                    <tr>
+                    <td class="auto-style4">
                         <asp:Label ID="Label5" runat="server" Text="New Password"></asp:Label>
                     </td>
                     <td class="auto-style5">
@@ -79,12 +119,27 @@
                 </tr>
                     <tr>
                     <td class="auto-style1">
+                        &nbsp;</td>
+                    <td>
+                        &nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                    <tr>
+                    <td class="auto-style1">
                         <asp:Label ID="Label6" runat="server" Text="Confirm Password"></asp:Label>
                     </td>
                     <td>
                         <asp:TextBox ID="Cpass" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
                     <td>&nbsp;</td>
+                </tr>
+                    <tr>
+                    <td class="auto-style2">
+                        &nbsp;</td>
+                    <td class="auto-style3">
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="passtxt" ControlToValidate="Cpass" ErrorMessage="Password mismatch" Font-Bold="True" Font-Size="Smaller" ForeColor="Red"></asp:CompareValidator>
+                    </td>
+                    <td class="auto-style3">&nbsp;</td>
                 </tr>
                     <tr>
                     <td class="auto-style2">

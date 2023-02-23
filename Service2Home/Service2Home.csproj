@@ -154,6 +154,7 @@
     <Content Include="assets\vendor\purecounter\purecounter_vanilla.js" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.css" />
     <Content Include="assets\vendor\swiper\swiper-bundle.min.js" />
+    <Content Include="categoryadd.aspx" />
     <Content Include="changelog.txt" />
     <Content Include="contact.html" />
     <Content Include="default.aspx" />
@@ -182,6 +183,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="categoryadd.aspx.cs">
+      <DependentUpon>categoryadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="categoryadd.aspx.designer.cs">
+      <DependentUpon>categoryadd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="connectionclass.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
